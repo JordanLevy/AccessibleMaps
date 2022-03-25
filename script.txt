@@ -1,0 +1,12 @@
+Help
+Close
+How to use
+Clear Map
+Show [locationName]
+	e.g. Show libraries, Show museums, Show firestations, Show parks
+Plan my Day
+Where am I
+Zoom in
+Zoom out
+About [commandName]
+	e.g. About Plan my Day, About Show, etc.

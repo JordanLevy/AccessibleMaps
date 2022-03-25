@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tourism Hamilton Application</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- link custom stylesheet -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<div class="p-3 mb-2 bg-dark text-white"></div>
+</head>
+<body>
+	<div style="position:relative;">
+		<div id='myMap' style="position: fixed; top: 0px;
+		left: 0px; right:0px; bottom:0px; z-index: 0">
+		<div id='main'>
+			<input id="openSidebarBtn" type="button" value='-> Say "Help"' class="openbtn" onclick="toggleNav()" style="position:absolute;top:0;left:0;z-index:1"></input>
+		</div>
+		<div id="mySidebar" class="sidebar">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <h3 id='cmdListTitle'>Command List</h3>
+		  <a href="#" class='sidebarOption' onClick='about(0)'>"Help"</a>
+		  <a href="#" class='sidebarOption' onClick='about(1)'>"How to use"</a>
+		  <a href="#" class='sidebarOption' onClick='about(2)'>"Clear Map"</a>
+		  <a href="#" class='sidebarOption' onClick='about(3)'>"Show ___"</a>
+		  <a href="#" class='sidebarOption' onClick='about(4)'>"Plan my Day"</a>
+		  <a href="#" class='sidebarOption' onClick='about(5)'>"Where am I"</a>
+		  <a href="#" class='sidebarOption' onClick='about(6)'>"Zoom in"</a>
+		  <a href="#" class='sidebarOption' onClick='about(7)'>"Zoom out"</a>
+		  <a href="#" class='sidebarOption' onClick='about(8)'>"About ___"</a>
+		</div>
+	</div>
+
+	<!-- Load in the annyang library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+	<script src="firestations.js"></script>
+	<script src="libraries.js"></script>
+	<script src="museums.js"></script>
+	<script src="parks.js"></script>
+	<script src="js/index.js"></script>
+	<script src="https://www.bing.com/api/maps/mapcontrol?key=Ao9pr871PkWBHGRHO0L9f_kuQRMt5jgnmM-oQ8i0e6Ll-8DNNEgrcbiHr_wjaKq4&callback=loadmap" async defer></script>
+
+</body>
+</html>
+
